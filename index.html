@@ -11,6 +11,7 @@
     <a-scene renderer="colorManagement: true;">
       <a-assets>
         <a-asset-item id="engine" src="models/Room_1.glb"></a-asset-item>
+        <a-asset-item id="MM" src="models/VITAL SIGNS MONITOR.glb"></a-asset-item>
         <a-mixin id="image" geometry="height: 2; width: 2"></a-mixin>
         <a-mixin id="delayVisible" event-set__loaded="visible: true" visible="false"></a-mixin>
         <!audio id="blip1" src="audio/321103__nsstudios__blip1.wav"></audio>
@@ -37,7 +38,10 @@
       </a-entity>
 
       <a-entity position="0 0 -1">
-        <a-gltf-model src="#engine" rotation="0 0 0" scale="18 18 18"></a-gltf-model>
+        <a-gltf-model src="#engine" position="3 0 0" rotation="0 0 0" scale="7 7 7"></a-gltf-model>
+      </a-entity>
+       <a-entity position="0 0 -1">
+        <a-gltf-model src="#MM" rotation="0 0 0" scale="18 18 18"></a-gltf-model>
       </a-entity>
 
       
