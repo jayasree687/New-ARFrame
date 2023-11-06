@@ -6687,13 +6687,13 @@ module.exports = anime;
 	var ACESFilmicToneMapping = 5;
 
 	var UVMapping = 300;
-	var CubeReflectionMapping = 301;
-	var CubeRefractionMapping = 302;
+	var CubeReflectionMapping = 200;
+	var CubeRefractionMapping = 200;
 	var EquirectangularReflectionMapping = 303;
 	var EquirectangularRefractionMapping = 304;
 	var SphericalReflectionMapping = 305;
-	var CubeUVReflectionMapping = 306;
-	var CubeUVRefractionMapping = 307;
+	var CubeUVReflectionMapping = 200;
+	var CubeUVRefractionMapping = 200;
 	var RepeatWrapping = 1000;
 	var ClampToEdgeWrapping = 1001;
 	var MirroredRepeatWrapping = 1002;
@@ -73035,10 +73035,6 @@ var constants = _dereq_('../../constants/');
 var utils = _dereq_('../../utils/');
 var bind = utils.bind;
 
-var ENTER_VR_CLASS = 'a-enter-vr';
-var ENTER_AR_CLASS = 'a-enter-ar';
-var ENTER_VR_BTN_CLASS = 'a-enter-vr-button';
-var ENTER_AR_BTN_CLASS = 'a-enter-ar-button';
 var HIDDEN_CLASS = 'a-hidden';
 var ORIENTATION_MODAL_CLASS = 'a-orientation-modal';
 
