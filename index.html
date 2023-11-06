@@ -7,8 +7,23 @@
     <!meta name="description" content="Anime UI — A-Frame">
     <script src="dist/aframe-master.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
-    
+    <style>
+.container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+</style>
   </head>
+  
   <body>
     <a-scene renderer="colorManagement: true;">
       <a-assets>
@@ -172,6 +187,9 @@
       <!-- Sounds. -->
       <a-entity sound="autoplay: true; src: #blip1"></a-entity>
     <button class="slide" id="2"   position="0 0 .01" onclick="switchSrc(2,'2.glb')" style="float:right;"><img src="Right.png" id="youtube-icon" style="width:40px;height:40px;"></button>  <a-entity sound="autoplay: true; src: #blip2"></a-entity>
+    <div class="vertical-center">
+    <button>Centered Button</button>
+  </div>
     </a-scene>
     
   </body>
