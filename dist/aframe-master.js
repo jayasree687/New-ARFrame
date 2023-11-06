@@ -73035,6 +73035,10 @@ var constants = _dereq_('../../constants/');
 var utils = _dereq_('../../utils/');
 var bind = utils.bind;
 
+var ENTER_VR_CLASS = 'a-enter-vr';
+var ENTER_AR_CLASS = 'a-enter-ar';
+var ENTER_VR_BTN_CLASS = 'a-enter-vr-button';
+var ENTER_AR_BTN_CLASS = 'a-enter-ar-button';
 var HIDDEN_CLASS = 'a-hidden';
 var ORIENTATION_MODAL_CLASS = 'a-orientation-modal';
 
