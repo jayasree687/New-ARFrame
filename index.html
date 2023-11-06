@@ -6,7 +6,7 @@
     <!meta name="description" content="Anime UI — A-Frame">
     <script src="dist/aframe-master.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
-    <button class="slide" id="2" onclick="switchSrc(2,'2.glb')" style="float:right;"><img src="Right.png" id="youtube-icon" style="width:40px;height:40px;"></button>
+    
   </head>
   <body>
     <a-scene renderer="colorManagement: true;">
@@ -170,7 +170,7 @@
 
       <!-- Sounds. -->
       <a-entity sound="autoplay: true; src: #blip1"></a-entity>
-      <a-entity sound="autoplay: true; src: #blip2"></a-entity>
+    <button class="slide" id="2" onclick="switchSrc(2,'2.glb')" style="float:right;"><img src="Right.png" id="youtube-icon" style="width:40px;height:40px;"></button>  <a-entity sound="autoplay: true; src: #blip2"></a-entity>
     </a-scene>
     <button onclick="myFunction()">Click me</button>
   </body>
