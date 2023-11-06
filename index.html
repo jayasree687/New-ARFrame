@@ -191,11 +191,15 @@
       <button class="slide selected" id="1" onclick="switchSrc(1,'1.glb')"></button>
       <button class="slide" id="2"   position="0 0 .01" onclick="switchSrc(2,'2.glb')" style="float:right;"><img src="Right.png" id="youtube-icon" style="width:40px;height:40px;"></button>  <a-entity sound="autoplay: true; src: #blip2"></a-entity>
     <div class="vertical-center">
-    <button>Centered Button</button>
+    <button onclick="myFunction()">Centered Button</button>
     
     
   </div>
     <script>
+  function myFunction() {
+  document.getElementById("demo").innerHTML = "https://www.youtube.com/watch?v=t5bEzRzltGU";
+}	    
+	    
     
     const models = ['1.glb', '2.glb', '3.glb', '4.glb','5.glb','6.glb','7.glb','8.glb','9.glb','10.glb'];
     const toggleModel = document.querySelector('#toggle-model');
